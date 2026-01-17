@@ -1,0 +1,26 @@
+### 
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "CourseID": "CS101",
+  "CourseName": "Intro",
+  "Credits": 3,
+  "Description": "Basic",
+  "Semester": 1
+}
+
+### Get all
+GET http://localhost:3000/api/courses
+
+### Get by id
+GET http://localhost:3000/api/courses/CS101
+
+### Patch
+PATCH http://localhost:3000/api/courses/CS101
+Content-Type: application/json
+
+{ "Credits": 4 }
+
+### Delete
+DELETE http://localhost:3000/api/courses/CS101
