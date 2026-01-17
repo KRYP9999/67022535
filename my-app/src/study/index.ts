@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { z } from 'zod'
+import db from "../db/index";
 
 const CourseSchema = z.object({
   CourseID: z.string().min(1),
