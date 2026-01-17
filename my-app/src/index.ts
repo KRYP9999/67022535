@@ -1,11 +1,11 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
-import  CourseRoutes from './study/index.js'
+import  CourseRoutes from './courses/index.js'
 
 
 const app = new Hono()
 
-app.route('/api/study', CourseRoutes)
+app.route('/api/courses', CourseRoutes)
 
 serve({
   fetch: app.fetch,
